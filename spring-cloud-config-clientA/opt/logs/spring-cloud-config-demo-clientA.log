@@ -542,6 +542,7 @@ Verify the connector's configuration, identify and stop any process that's liste
 2017-11-23 00:13:27.906  INFO 10496 --- [http-nio-8080-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2017-11-23 00:13:27.906  INFO 10496 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2017-11-23 00:13:27.932  INFO 10496 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+<<<<<<< HEAD
 2017-11-23 09:58:48.445  INFO 9268 --- [main] .SpringCloudConfigDemoClientAApplication : The following profiles are active: dev
 2017-11-23 09:58:48.464  INFO 9268 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73877e19: startup date [Thu Nov 23 09:58:48 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@46dffdc3
 2017-11-23 09:58:49.133  WARN 9268 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[spring.cloud.config.demo.clienta.configcontroller]' package. Please check your configuration.
@@ -1484,7 +1485,6 @@ java.lang.ClassNotFoundException: org.eclipse.jdt.internal.compiler.env.INameEnv
 2017-11-23 12:53:14.944  INFO 9748 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
 2017-11-23 12:53:14.945  INFO 9748 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
 2017-11-23 12:53:14.945  INFO 9748 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
-2017-11-23 12:53:14.948  INFO 9748 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
 2017-11-23 12:53:14.960  INFO 9748 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
 2017-11-23 12:53:14.974  INFO 9748 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=73877e19,type=ConfigurationPropertiesRebinder]
 2017-11-23 12:53:15.315  INFO 9748 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)

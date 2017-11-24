@@ -14,12 +14,12 @@ public class UserDaoImpl extends BaseDao implements UserDao {
 
     @Override
     public User selectOne(User user) throws Exception {
-        return this.getSqlSession().selectOne("com.java.dao.UserMapper.selectOne", user);
+        return this.getSqlSession().selectOne("spring.cloud.config.demo.dao.mapper.UserMapper.selectOne", user);
     }
 
     @Override
     public List selectList(User user) throws Exception {
-        return (List) this.getSqlSession().selectList("com.java.dao.UserMapper.selectOne", user);
+        return this.getSqlSession().selectList("spring.cloud.config.demo.dao.mapper.UserMapper.selectOne", user);
     }
 
 

@@ -14,13 +14,12 @@ import spring.cloud.config.demo.clienta.model.EnvironmentConfig;
 
 @RestController
 @RefreshScope
-@RequestMapping("/spring-cloud-config-clientA")
+@RequestMapping("/clientA")
 public class ConfigClientAController {
     private static final String APPLICATION_NAME_CONFIG = "spring.application.name";
     private static final String ACTIVE_PROFILE_CONFIG = "spring.profiles.active";
     private static final String LABEL_CONFIG = "spring.cloud.config.label";
     private static final String CONFIG_SERVER_CONFIG = "spring.cloud.config.uri";
-
 
     @Autowired
     private Environment env;
@@ -46,5 +45,6 @@ public class ConfigClientAController {
     public String getProfile() {
         return profile;
     }
+
 
 }

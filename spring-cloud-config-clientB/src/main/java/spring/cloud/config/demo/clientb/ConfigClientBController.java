@@ -14,7 +14,7 @@ import spring.cloud.config.demo.model.EnvironmentConfig;
 
 @RestController
 @RefreshScope
-@RequestMapping("/spring-cloud-config-clientB")
+@RequestMapping("/clientB")
 public class ConfigClientBController {
     private static final String APPLICATION_NAME_CONFIG = "spring.application.name";
     private static final String ACTIVE_PROFILE_CONFIG = "spring.profiles.active";

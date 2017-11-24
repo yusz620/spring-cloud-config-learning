@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-import spring.cloud.config.demo.dao.UserDao;
 import spring.cloud.config.demo.domain.User;
+import spring.cloud.config.demo.service.UserService;
 
 @RestController
 @RefreshScope
@@ -28,13 +28,15 @@ public class UserController {
 
     static Map<Long, User> users = Collections.synchronizedMap(new HashMap<Long, User>());
     @Autowired
-    private UserDao userDao;
+    private UserService userService;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public List<User> getUserList() {
         List<User> r = new ArrayList<>();
         try {
-            r = userDao.selectList(new User());
+            User user = new User();
+            user.setId(1l);
+            r = this.userService.selectList(user);
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

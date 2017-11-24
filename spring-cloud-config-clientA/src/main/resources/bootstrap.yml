@@ -8,3 +8,4 @@ spring:
       uri: http://localhost:8888
       label: master
       profile: dev
+#profile: spring-cloud-config-clientA

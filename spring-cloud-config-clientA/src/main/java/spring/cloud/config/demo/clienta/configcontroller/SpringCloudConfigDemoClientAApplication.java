@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.RestController;
 
 @Configuration
-@ComponentScan
+@ComponentScan(basePackages = {"spring.cloud.config.demo.*"})
 @EnableAutoConfiguration
 @SpringBootApplication
 @RestController

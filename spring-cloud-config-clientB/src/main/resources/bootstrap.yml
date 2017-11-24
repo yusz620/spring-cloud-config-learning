@@ -6,5 +6,8 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888
+      username: andy
+      password: 123456
       label: master
       profile: dev
+#profile: spring-cloud-config-clientA

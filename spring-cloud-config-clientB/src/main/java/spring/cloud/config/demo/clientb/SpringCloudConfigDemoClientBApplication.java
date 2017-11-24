@@ -11,7 +11,6 @@ import org.springframework.context.annotation.Configuration;
 @EnableAutoConfiguration
 @SpringBootApplication
 public class SpringCloudConfigDemoClientBApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(SpringCloudConfigDemoClientBApplication.class, args);
     }

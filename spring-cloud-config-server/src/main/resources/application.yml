@@ -1,0 +1,34 @@
+server:
+  port: '8888'
+spring:
+  cloud:
+    config:
+      server:
+        git:
+         uri: git@github.com:andy-spring-cloud-config-repos/{application}
+         #force-pull: 'true' 
+         # force-pull: 'true'
+         # uri: git@github.com:yusz620/spring-cloud-config-repo.git
+         #searchPaths: '{application}' 
+          
+         #uri: git@github.com:yusz620/{application} 
+         
+         #uri: git@github.com:andy-spring-cloud-config-repos/{application}
+         # repos:
+         #   spring-cloud-config-clientA:
+         #       pattern: spring-cloud-config-clientA*
+         #       uri: git@github.com:andy-spring-cloud-config-repos/spring-cloud-config-clientA.git
+         #       force-pull: true
+         #   spring-cloud-config-clientB:
+         #       pattern: spring-cloud-config-clientB*
+         #       uri: git@github.com:andy-spring-cloud-config-repos/spring-cloud-config-clientB.git
+         #       force-pull: true
+encrypt:
+  key: encryptkey 
+security:
+  user:
+    password: 123456
+    name: andy
+  basic:
+    enabled: true
+#curl -x POST http://localhost:8888/encrypt -d 123         

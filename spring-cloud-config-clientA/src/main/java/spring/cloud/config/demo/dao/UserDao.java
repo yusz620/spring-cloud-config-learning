@@ -7,5 +7,5 @@ import spring.cloud.config.demo.domain.User;
 public interface UserDao {
     public User selectOne(User user) throws Exception;
 
-    public List selectList(User user) throws Exception;
+    public List<User> selectList(User user) throws Exception;
 }

@@ -6,7 +6,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 
 
-public abstract class BaseDao<setSqlSessionFactory> extends SqlSessionDaoSupport {
+public abstract class BaseDao extends SqlSessionDaoSupport {
     @Override
     @Resource
     public void setSqlSessionFactory(SqlSessionFactory sqlSessionFactory) {

@@ -23,6 +23,8 @@ spring:
          #       pattern: spring-cloud-config-clientB*
          #       uri: git@github.com:andy-spring-cloud-config-repos/spring-cloud-config-clientB.git
          #       force-pull: true
+      discovery:
+        enabled: true
 encrypt:
   key: application 
   keyStore:
@@ -36,5 +38,4 @@ security:
     name: andy
   basic:
     enabled: true
-    
 #curl -x POST http://localhost:8888/encrypt -d 123         

@@ -35,6 +35,7 @@
 		<module>spring-cloud-config-server</module>
 		<module>spring-cloud-config-clientA</module> 
 		<module>spring-cloud-config-clientB</module> 
+		<module>spring-cloud-config-eureka</module>
 	</modules>
 	
 	<dependencies>

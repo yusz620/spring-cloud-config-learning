@@ -23,8 +23,15 @@ spring:
          #       pattern: spring-cloud-config-clientB*
          #       uri: git@github.com:andy-spring-cloud-config-repos/spring-cloud-config-clientB.git
          #       force-pull: true
+      discovery:
+        enabled: true
 encrypt:
-  key: encryptkey 
+  key: application 
+  keyStore:
+    location: classpath:server.jks
+    password: letmein
+    alias: mytestkey
+    secret: changeme
 security:
   user:
     password: 123456

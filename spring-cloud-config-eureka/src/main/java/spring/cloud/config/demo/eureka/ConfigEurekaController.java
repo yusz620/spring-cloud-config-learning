@@ -14,7 +14,7 @@ import spring.cloud.config.demo.model.EnvironmentConfig;
 
 @RestController
 @RefreshScope
-@RequestMapping("/eureka")
+@RequestMapping("/config-eureka")
 public class ConfigEurekaController {
     private static final String APPLICATION_NAME_CONFIG = "spring.application.name";
     private static final String ACTIVE_PROFILE_CONFIG = "spring.profiles.active";

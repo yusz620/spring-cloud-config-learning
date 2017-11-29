@@ -6,12 +6,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.bind.annotation.RestController;
 
 @Configuration
 @ComponentScan
 @EnableAutoConfiguration
 @SpringBootApplication
 @EnableEurekaServer
+@RestController
 public class SpringCloudConfigDemoEurekaApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringCloudConfigDemoEurekaApplication.class, args);

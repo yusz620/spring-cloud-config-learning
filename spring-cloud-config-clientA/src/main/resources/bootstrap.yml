@@ -2,14 +2,12 @@ spring:
   application:
     name: spring-cloud-config-clientA
   profiles:
-    active: dev,test,default
+    active: dev
   cloud:
     config:
       username: andy
       password: 123456
-#  cloud:
-#    config:
-#      uri: http://localhost:8888
-#      label: master
-#      profile: test
-#profile: spring-cloud-config-clientA
+      uri: http://localhost:8888
+      label: master
+      profile: dev
+profile: spring-cloud-config-clientA

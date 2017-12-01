@@ -9,5 +9,5 @@ spring:
       username: andy
       password: 123456
       label: master
-      profile: dev
-profile: spring-cloud-config-eureka      
+      profile: dev    
+profile: spring-cloud-config-eureka  

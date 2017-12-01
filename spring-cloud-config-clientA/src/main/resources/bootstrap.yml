@@ -11,3 +11,12 @@ spring:
       label: master
       profile: dev
 profile: spring-cloud-config-clientA
+#security:
+#  user:
+#    password: 123456
+#    name: andy
+#  basic:
+#    enabled: true
+management:
+  security:
+    enabled: false

@@ -14,7 +14,8 @@ import spring.cloud.config.demo.service.UserService;
 // @EnableAutoConfiguration
 @RequestMapping("/test")
 public class TestController {
-    private User user = new User();
+    @Autowired
+    private User user;// = new User();
     @Autowired
     private UserService userService;
 

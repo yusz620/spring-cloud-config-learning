@@ -14,7 +14,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.8.RELEASE</version>
+		<version>1.5.9.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -25,7 +25,7 @@
 		<java.version>1.8</java.version>
 		<java.src.version>1.8</java.src.version>
 		<java.target.version>1.8</java.target.version>
-		<spring-cloud.version>Dalston.SR4</spring-cloud.version>
+		<spring-cloud.version>Edgware.RELEASE</spring-cloud.version>
 		<project.artifactId>spring-cloud-config-learning</project.artifactId>
 		<project.version>0.0.1-SNAPSHOT</project.version>
 	</properties>

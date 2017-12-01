@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>FreeMarker Template</title>
+<title>error page</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<script  type="text/javascript" src="../js/jquery-3.2.1.js"></script>
 	<script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
@@ -10,7 +10,6 @@
 	<script  type="text/javascript" src="../js/DatePicker/WdatePicker.js"></script>
 </head>
 <body>
-	hello ${user.name}
 	<form method="post" style="margin: 0px;" action="" name="fmName" id="fmName">
         	
             <table class="EpmsTable">
@@ -18,7 +17,7 @@
                     <td class="EpmsTdWithColor" width="10%" align="right">模板名称<font color="red">*</font></td>
                     <td class="EpmsTdNoColor" width="50">
                         <input class="inputInput" maxlength="100" type="text" name="template.name"
-                            id="template.name"  value=${user.name?if_exists} />
+                            id="template.name"   />
                     </td>
                 	<td class="EpmsTdWithColor" width="10%" align="right">选择查询出的模板</td>
                 	<td class="EpmsTdNoColor" >

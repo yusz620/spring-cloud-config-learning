@@ -41,7 +41,7 @@ security:
 #curl -x POST http://localhost:8888/encrypt -d 123
 eureka:
   client:
-    register-with-eureka: true
-    fetch-registry: true
+    register-with-eureka: false
+    fetch-registry: false
     service-url:
-      defaultZone: http://localhost:8082/eureka,http://localhost:8080/eureka,http://localhost:8081/eureka,http://localhost:8888/eureka         
+      defaultZone: http://localhost:8888/eureka        

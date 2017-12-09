@@ -1,13 +1,29 @@
 package spring.cloud.config.demo.domain;
 
+import java.io.Serializable;
+
 import org.springframework.stereotype.Component;
 
 @Component
-public class User {
+public class User implements Serializable {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private Long id;
     private String name;
     private Integer age;
+    private String password;
+
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public Long getId() {
         return id;
@@ -35,7 +51,8 @@ public class User {
 
     @Override
     public String toString() {
-        return "User [id=" + id + ", name=" + name + ", age=" + age + "]";
+        return "User [id=" + id + ", name=" + name + ", age=" + age + ", password=" + password + "]";
     }
+
 
 }

@@ -14,7 +14,7 @@ import spring.cloud.config.demo.service.UserService;
 // @EnableAutoConfiguration
 @RequestMapping("/test")
 public class TestController {
-    @Autowired
+
     private User user;// = new User();
     @Autowired
     private UserService userService;
@@ -40,5 +40,4 @@ public class TestController {
     public void setUser(User user) {
         this.user = user;
     }
-
 }

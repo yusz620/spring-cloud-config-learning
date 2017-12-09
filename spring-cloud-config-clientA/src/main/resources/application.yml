@@ -2,7 +2,42 @@ server:
   port: 8080
 eureka:
   client:
-    register-with-eureka: true
+    register-with-eureka: false
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8082/eureka,http://localhost:8080/eureka,http://localhost:8081/eureka,http://localhost:8888/eureka
+      defaultZone: http://localhost:8888/eureka
+spring:
+  devtools:
+      livereload:
+        enabled: true
+      restart:
+        enabled: true
+        additional-paths: src/main/java,src/main/resources/,src/main/resources/static/,src/main/resources/templates/ 
+             
+# THYMELEAF (ThymeleafAutoConfiguration) 
+#spring.thymeleaf.cache=true # Enable template caching. 
+# spring.thymeleaf.check-template-location=true # Check that the templates location exists. 
+# spring.thymeleaf.content-type=text/html # Content-Type value. 
+# spring.thymeleaf.enabled=true # Enable MVC Thymeleaf view resolution. 
+# spring.thymeleaf.encoding=UTF-8 # Template encoding. 
+# spring.thymeleaf.excluded-view-names= # Comma-separated list of view names that should be excluded from resolution. 
+# spring.thymeleaf.mode=HTML5 # Template mode to be applied to templates. See also StandardTemplateModeHandlers. 
+# spring.thymeleaf.prefix=classpath:/templates/ # Prefix that gets prepended to view names when building a URL. 
+# spring.thymeleaf.suffix=.html # Suffix that gets appended to view names when building a URL. 
+# spring.thymeleaf.template-resolver-order= # Order of the template resolver in the chain. 
+# spring.thymeleaf.view-names= # Comma-separated list of view names that can be resolved.
+  thymeleaf:
+    cache: false
+    content-type: text/html
+    enabled: true
+    encoding: UTF-8
+    mode: HTML5
+    suffix: .html
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.Oracle10gDialect   
+  
+  
+  
+        
